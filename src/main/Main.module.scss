@@ -1,0 +1,89 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.mainBlock {
+  min-height: 100vh;
+  @include flex(row, center, center, nowrap);
+
+  .container {
+    @include container();
+    @include flex(row, center, center, wrap);
+
+    .text {
+      //@include flex(column, flex-start, flex-start, nowrap);
+
+
+      span {
+        width: 300px;
+        font-size: 24px;
+        @media screen and (max-width: 1200px) {
+          width: 100px;
+          font-size: 18px;
+        }
+      }
+      h1 {
+        font-size: 48px;
+        margin: 40px 80px 40px 0;
+        @media screen and (max-width: 1200px) {
+          font-size: 30px;
+          margin: 40px 80px 40px 0;
+        }
+
+      }
+    }
+  }
+
+}
+
+//.text h1 {
+//  font-size: 48px;
+//  margin-top: 40px;
+//  margin-bottom: 40px;
+//}
+.photo {
+  position: relative;
+  z-index: 1;
+
+
+  .image {
+    width: 350px;
+    height: 525px;
+    background-image: url("../assets/image/photoMain/photo-Batskalevich.jpg");
+    background-position: 80%, 0;
+    @media screen and (max-width: 600px) {
+      width: 300px;
+      height: 450px;
+      transition: .5s;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 105%;
+      height: 110%;
+      border: 5px solid #FFA500;
+      top: -25px;
+      left: 15px;
+      z-index: -1;
+    }
+    @media screen and (max-width: 1150px) {
+      margin-top: 50px;
+    }
+
+  }
+}
+
+
+//@media (max-width: 900px) {
+//  .photo img {
+
+//  }
+//
+//  .text h1 {
+//    font-size: 35px;
+//    margin-top: 40px;
+//    margin-bottom: 40px;
+//  }
+//}
+
+

@@ -1,0 +1,108 @@
+@import "src/common/styles/sass/variables.scss";
+@import "src/common/styles/sass/mixins";
+
+.contactsBlock {
+  margin-bottom: $marginBottomBlock;
+
+  .container {
+    @include container();
+    @include flex(column, flex-start, center, wrap);
+
+    .messageSuccess {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      padding: 10px;
+      max-width: 290px;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      margin-top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid $btnColor;
+      border-radius: 4px;
+      z-index: 1;
+      transition: all 400ms ease;
+
+      span {
+        text-align: center;
+        color: #4a4a4a;
+      }
+    }
+
+
+    .contactsForm {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+
+      .inputArea,
+      .textArea {
+        width: 100%;
+        border: 1px solid $textColor;
+        box-sizing: border-box;
+        outline: none;
+        color: $textColor;
+        margin-bottom: 1.2rem;
+
+        &:-webkit-autofill {
+          border: 1px solid $textColor;
+          -webkit-text-fill-color: $textColor;
+          -webkit-box-shadow: 0 0 0 1000px #f8f9fa inset;
+          transition: background-color 5000s ease-in-out 0s;
+
+          &:focus {
+            border: 2px solid #4a4a4a;
+          }
+        }
+
+      }
+
+      .inputArea {
+        height: calc(1.5em + .75em + 2px);
+        padding: .4rem 15px;
+
+        &:focus {
+          border: 2px solid;
+          transition: all .4s ease-in-out 0s;
+        }
+      }
+
+      .textArea {
+        min-height: 160px;
+        padding: 15px;
+        resize: none;
+
+        &:focus {
+          border: 2px solid;
+          transition: all .4s ease-in-out 0s;
+        }
+      }
+
+      .errorMessage {
+        color: #f8241c;
+        font-size: 14px;
+      }
+
+      .btn {
+        @include btn();
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+

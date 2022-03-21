@@ -1,0 +1,26 @@
+@import "../common/styles/sass/variables";
+
+.footerBlock{
+    /*background-color: #f8f9fa;*/
+}
+
+.footerContainer{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footerSocialIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon img {
+    height: 80px;
+    width: 80px;
+    padding: 20px;
+    &:hover {
+        transform: scale(1.3);
+    }
+}

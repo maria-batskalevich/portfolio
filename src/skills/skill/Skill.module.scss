@@ -1,0 +1,33 @@
+@import "../../common/styles/sass/variables.scss";
+@import "src/common/styles/sass/mixins.scss";
+
+.skill {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  @include flex(column, flex-start, center, wrap);
+  border-radius: 6px;
+  transition-timing-function: cubic-bezier(.25, .25, .75, .75);
+  transition-duration: 0.4s;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  @media screen and (max-width: 755px) {
+    margin-bottom: 50px;
+  }
+}
+
+.skill h3{
+  font-size: 24px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.icon img {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+}

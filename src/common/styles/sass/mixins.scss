@@ -1,0 +1,33 @@
+@import "variables";
+
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin text($fontSize, $lineHeight ) {
+  font-family: $fontFamily;
+  color: $textColor;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin flex($flexDirection, $justifyContent, $alignItems, $wrap) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap;
+}
+
+@mixin btn() {
+  width: 180px;
+  background-color: $btnColor;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+}

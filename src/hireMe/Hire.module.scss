@@ -1,0 +1,22 @@
+@import "src/common/styles/sass/mixins";
+@import "src/common/styles/sass/variables";
+
+.hireBlock {
+    /*background-color: #f8f9fa;*/
+}
+
+.hireContainer {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: $marginBottomBlock;
+}
+
+.title {
+    background-color: lightblue;
+    margin-bottom: 20px;
+}
+
+.hireBtn {
+    @include btn()
+}

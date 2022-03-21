@@ -1,0 +1,19 @@
+@import "src/common/styles/sass/mixins";
+@import "src/common/styles/sass/variables";
+
+.projectsBlock {
+    .projectsContainer {
+    @include flex(column, flex-start, center, nowrap );
+
+    .projects {
+      width: 100%;
+      @include flex(row, space-between, center, wrap);
+      flex-wrap: wrap;
+      margin-top: 30px;
+      margin-bottom: $marginBottomBlock;
+      @media screen and (max-width: 1000px) {
+        justify-content: center;
+      }
+    }
+  }
+}

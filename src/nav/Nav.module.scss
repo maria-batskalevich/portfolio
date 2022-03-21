@@ -1,0 +1,27 @@
+@import "../common/styles/sass/mixins.scss";
+
+.nav {
+  /*border: 1px solid red;*/
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  margin-right: 50px;
+
+  a {
+    @include text(20px, 1.2);
+    cursor: pointer;
+
+    &:hover {
+      color: $primaryColor;
+
+    }
+  }
+
+  .active {
+    color: $primaryColor;
+  }
+
+}
+

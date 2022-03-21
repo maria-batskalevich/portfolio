@@ -1,0 +1,28 @@
+@import "src/common/styles/sass/variables";
+
+.title {
+    margin-bottom: $marginBottomBlock;
+    //margin-bottom: 22px;
+    color: #424242;
+    font-weight: 400;
+    //text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    font-size: $h2FontSize;
+    &::before{
+        content: "";
+        position: absolute;
+        background: $primaryColor;
+        width: 90px;
+        height: 2px;
+        bottom: -7px;
+        left: 50%;
+        transform: translate(-50%, 20%);
+    }
+    h2 {
+        font-size: 40px;
+    }
+}
+
+
+

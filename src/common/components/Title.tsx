@@ -9,7 +9,7 @@ type PropsType = {
 export const Title = (props: PropsType) => {
     return (
         <div className={s.title}>
-            <h2 >{props.title}</h2>
+            <h2>{props.title}</h2>
         </div>
     )
 }

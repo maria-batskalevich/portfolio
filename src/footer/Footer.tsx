@@ -1,6 +1,5 @@
 import React from "react";
 import s from './Footer.module.scss'
-import styleContainer from '../../src/common/styles/Container.module.css'
 import github from '../assets/image/footer-social/github-logo.png'
 import linkedIn from '../assets/image/footer-social/linkedin-logo.png'
 import telegram from '../assets/image/footer-social/telegram-logo.png'
@@ -19,16 +18,16 @@ export const Footer = () => {
     ]
 
     return (
-            <div className={s.footerBlock}>
-                <div className={`${styleContainer.container} ${s.footerContainer} `}>
-                    <Title title={'Maria Batskalevich'}/>
-                    <div className={s.footerSocialIcons}>
-                        {socialLinks.map(f => <FooterIcon id={f.id} logo={f.logo} link={f.link} title={f.logo}/>)}
-                    </div>
-                    <span className={s.copyright}> 2022 All rights reserved</span>
-
+        <div className={s.footerBlock}>
+            <div className={`${s.container}`}>
+                <Title title={'Maria Batskalevich'}/>
+                <div className={s.footerSocialIcons}>
+                    {socialLinks.map(f => <FooterIcon id={f.id} logo={f.logo} link={f.link} title={f.logo}/>)}
                 </div>
+                <span className={s.copyright}> 2022 All rights reserved</span>
+
             </div>
+        </div>
 
     )
 }

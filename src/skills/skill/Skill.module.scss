@@ -18,16 +18,20 @@
   @media screen and (max-width: 755px) {
     margin-bottom: 50px;
   }
+
+  .icon img {
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 
-.skill h3{
-  font-size: 24px;
-  margin-top: 10px;
-  text-align: center;
-}
 
-.icon img {
-  height: 100px;
-  width: 100px;
-  padding: 20px;
-}
+
+

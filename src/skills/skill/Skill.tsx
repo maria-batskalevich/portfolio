@@ -4,7 +4,6 @@ import s from './Skill.module.scss'
 type PropsType = {
     logo: string
     title: string
-    // description: string
 }
 
 export const Skill = (props: PropsType) => {
@@ -13,7 +12,7 @@ export const Skill = (props: PropsType) => {
             <div className={s.icon}>
                 <img src={props.logo} alt={'logo'}/>
             </div>
-                <h3>{props.title}</h3>
+            <h3>{props.title}</h3>
         </div>
     )
 }

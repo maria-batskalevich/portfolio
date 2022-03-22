@@ -37,13 +37,13 @@ export const Skills = () => {
         <div className={s.skillsBlock} id={'skills'}>
             <a id={'skills'}></a>
 
-                <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                    <div></div>
-                    <Title title={'Skills'}/>
-                    <div className={s.skills}>
-                        {skills.map(s => <Skill key={s.id} title={s.title} logo={s.logo}/>)}
-                    </div>
+            <div className={`${styleContainer.container} ${s.skillsContainer}`}>
+                <div></div>
+                <Title title={'Skills'}/>
+                <div className={s.skills}>
+                    {skills.map(s => <Skill key={s.id} title={s.title} logo={s.logo}/>)}
                 </div>
+            </div>
 
         </div>
     )

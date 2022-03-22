@@ -46,28 +46,22 @@
     }
   }
 
+  .projectInfo {
+    background-color: $bgColor;
+    padding: 25px 20px;
 
-    .projectInfo {
+    .projectTitle {
+      font-size: $h3FontSize;
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+      line-height: 1.2;
       background-color: $bgColor;
-      padding: 25px 20px;
+    }
 
-      .projectTitle {
-        font-size: $h3FontSize;
-        letter-spacing: 1px;
-        margin: 0 0 5px;
-        line-height: 1.2;
-        background-color: $bgColor;
-      }
-      .description {
-        @include text(16px, 1.2);
-        background-color: $bgColor;
-      }
+    .description {
+      @include text(16px, 1.2);
+      background-color: $bgColor;
     }
   }
+}
 
-
-//
-//.projectInfo {
-//  background-color: $bgColor;
-//  padding: 25px 20px;
-//}

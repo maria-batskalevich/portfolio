@@ -1,7 +1,6 @@
-@import "../common/styles/sass/mixins.scss";
+@import "../../common/styles/sass/mixins";
 
 .nav {
-  /*border: 1px solid red;*/
   width: 400px;
   display: flex;
   justify-content: space-between;
@@ -21,6 +20,13 @@
 
   .active {
     color: $primaryColor;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    display: none;
   }
 
 }

@@ -8,10 +8,10 @@ import {yupResolver} from "@hookform/resolvers/yup";
 
 export const Contacts = () => {
     interface IFormInputs {
-    name: string;
-    email: string;
-    message: string;
-}
+        name: string;
+        email: string;
+        message: string;
+    }
 
     const schema = yup.object({
         name: yup.string().required('Name is required'),
@@ -21,11 +21,11 @@ export const Contacts = () => {
 
     let [notification, setNotification] = React.useState({flag: false, message: 'xxx'})
 
-    const {register, handleSubmit,  formState: { errors }, setError} = useForm<IFormInputs>({
+    const {register, handleSubmit, formState: {errors}, setError} = useForm<IFormInputs>({
         resolver: yupResolver(schema)
     });
 
-    const onSubmitHandler =  (data: IFormInputs, e: any) => {
+    const onSubmitHandler = (data: IFormInputs, e: any) => {
         emailjs.sendForm('service_h31qkes', 'template_4twbiws', e.target, '3a14yMrBTTLNiPRA0')
             .then((result: { status: number; }) => {
                 if (result.status === 200) {
@@ -52,7 +52,6 @@ export const Contacts = () => {
     }
 
 
-
     return (
         <div className={s.contactsBlock} id={'contacts'}>
             <div className={s.container}>
@@ -61,12 +60,12 @@ export const Contacts = () => {
                 <div className={s.messageSuccess} style={{opacity: notification.flag ? '1' : ''}}>
                     <span>{notification.message}</span>
                 </div>
-                <form  onSubmit={handleSubmit(onSubmitHandler)} className={s.contactsForm}>
+                <form onSubmit={handleSubmit(onSubmitHandler)} className={s.contactsForm}>
                     <input
                         type="text"
                         className={s.inputArea}
                         placeholder={'Name'}
-                        {...register("name", )}
+                        {...register("name",)}
                     />
                     {errors.name && <span className={s.errorMessage}>{errors.name.message}</span>}
 
@@ -74,14 +73,14 @@ export const Contacts = () => {
                         type="text"
                         className={s.inputArea}
                         placeholder={'Email'}
-                        {...register("email", )}
+                        {...register("email",)}
                     />
                     {errors.email && <span className={s.errorMessage}>{errors.email.message}</span>}
 
                     <textarea
                         className={s.textArea}
                         placeholder={'Message'}
-                        {...register("message", )}
+                        {...register("message",)}
                         style={{resize: "none"}}
                     />
                     {errors.message && <span className={s.errorMessage}>{errors.message.message}</span>}

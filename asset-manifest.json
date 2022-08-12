@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.08691401.chunk.css",
-    "main.js": "/portfolio/static/js/main.7978476b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7978476b.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.cd5c57f5.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.cd5c57f5.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.9d74d1c5.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.9d74d1c5.js.map",
     "static/js/2.48ba8025.chunk.js": "/portfolio/static/js/2.48ba8025.chunk.js",
@@ -15,12 +15,13 @@
     "static/media/counter.1490bb68.png": "/portfolio/static/media/counter.1490bb68.png",
     "static/media/Main.module.scss": "/portfolio/static/media/photo-Batskalevich.9c18ef68.jpg",
     "static/media/reactHomework.56fdedc2.png": "/portfolio/static/media/reactHomework.56fdedc2.png",
+    "static/media/socialNetwork.4df30b63.png": "/portfolio/static/media/socialNetwork.4df30b63.png",
     "static/media/todolist.aba0351d.png": "/portfolio/static/media/todolist.aba0351d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9d74d1c5.js",
     "static/js/2.48ba8025.chunk.js",
     "static/css/main.08691401.chunk.css",
-    "static/js/main.7978476b.chunk.js"
+    "static/js/main.cd5c57f5.chunk.js"
   ]
 }

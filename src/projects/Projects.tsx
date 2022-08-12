@@ -6,6 +6,7 @@ import {Title} from "../common/components/Title";
 import todoImage from './../assets/image/myProjects/todolist.png'
 import reactHomeworkImage from './../assets/image/myProjects/reactHomework.png'
 import counterImage from './../assets/image/myProjects/counter.png'
+import socialNetworkImage from './../assets/image/myProjects/socialNetwork.png'
 
 
 export const Projects = () => {
@@ -19,7 +20,7 @@ export const Projects = () => {
         backgroundImage: `url(${reactHomeworkImage})`
     }
     const socialNetwork = {
-        backgroundImage: `url(${reactHomeworkImage})`
+        backgroundImage: `url(${socialNetworkImage})`
     }
     const todolistLink = 'https://maria-batskalevich.github.io/it-inc-todolist'
     const counterLink = 'https://maria-batskalevich.github.io/it-inc-counter/'
@@ -28,14 +29,13 @@ export const Projects = () => {
 
     return (
         <div className={s.projectsBlock} id={'projects'}>
-            <a id={'projects'}></a>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <Title title={'Projects'}/>
                 <div className={s.projects}>
                     <Project style={todolist} title={'Todolist'} description={'React, Redux, TypeScript and Material-UI have been used in this project to help a user create lists of tasks.'} link={`${todolistLink}`}/>
+                    <Project style={socialNetwork} title={'Social network'} description={'React, Redux and TypeScript have been used in this project.'} link={`${socialNetworkLink}`} />
                     <Project style={counter} title={'Counter'} description={'React, Redux, TypeScript and Material-UI have been used in this project.'} link={`${counterLink}`}/>
                     <Project style={reactHomework} title={'React homework'} description={'React, Redux and TypeScript have been used in this project.'} link={`${reactHomeworkLink}`} />
-                    {/*<Project style={socialNetwork} title={'Social network'} description={'React, Redux and TypeScript have been used in this project.'} link={`${socialNetworkLink}`} />*/}
                 </div>
             </div>
         </div>

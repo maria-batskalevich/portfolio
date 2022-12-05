@@ -26,7 +26,7 @@ export const Contacts = () => {
     });
 
     const onSubmitHandler = (data: IFormInputs, e: any) => {
-        emailjs.sendForm('service_h31qkes', 'template_4twbiws', e.target, '3a14yMrBTTLNiPRA0')
+        emailjs.sendForm('service_bb10fxl', 'template_4twbiws', e.target, '3a14yMrBTTLNiPRA0')
             .then((result: { status: number; }) => {
                 if (result.status === 200) {
                     e.target.reset()
@@ -55,7 +55,7 @@ export const Contacts = () => {
     return (
         <div className={s.contactsBlock} id={'contacts'}>
             <div className={s.container}>
-                <a id={'contacts'}></a>
+                <a id={'contacts'}/>
                 <Title title={'Contacts'}/>
                 <div className={s.messageSuccess} style={{opacity: notification.flag ? '1' : ''}}>
                     <span>{notification.message}</span>

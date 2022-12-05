@@ -34,8 +34,8 @@ export const Projects = () => {
                 <div className={s.projects}>
                     <Project style={todolist} title={'Todolist'} description={'React, Redux, TypeScript and Material-UI have been used in this project to help a user create lists of tasks.'} link={`${todolistLink}`}/>
                     <Project style={socialNetwork} title={'Social network'} description={'React, Redux and TypeScript have been used in this project.'} link={`${socialNetworkLink}`} />
-                    <Project style={counter} title={'Counter'} description={'React, Redux, TypeScript and Material-UI have been used in this project.'} link={`${counterLink}`}/>
                     <Project style={reactHomework} title={'React homework'} description={'React, Redux and TypeScript have been used in this project.'} link={`${reactHomeworkLink}`} />
+                    <Project style={counter} title={'Counter'} description={'React, Redux, TypeScript and Material-UI have been used in this project.'} link={`${counterLink}`}/>
                 </div>
             </div>
         </div>
